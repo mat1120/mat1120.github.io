@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site com JS</title>
+    <style>
+        /* Estilo Bse do Site*/
+        body{
+            font-family: arial, Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header{
+            background-color: #4caf50;
+            padding: 20px;
+            color: aliceblue;
+        }
+        h1{
+            margin: 0;
+        }
+        .galeria{
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .galeria img{
+            width: 200px;
+            transition: transform 0.3s ease;
+            border-radius: 10px;
+        }
+        .galeria img:hover{
+            transform: scale(1.2);
+        
+        }
+        #inforServico{
+            display: nome;
+            margin: 20px;
+            padding: 10px;
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+        }
+        .icones{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .icones i{
+            font-size: 40px;
+            color: #888;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+        #mensagemContato{
+            display: none;
+            background-color: #e0e0e0;
+            padding: 10px;
+            border: 10px;
+            border-radius:5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem vinda á galeria de Imagem</h1>
+    </header>
+    <section>
+        <h2>Nossa Galeria</h2>
+        <div class="galeria">
+            <img src="https://placehold.co/200x150?text=Ola+Mundo">
+            <img src="https://placehold.co/200x150?text=Texto">
+            <img src="https://placehold.co/200x150?text=Imagem">
+        </div>
+    </section>
+
+    <section>
+        <h2>Mais sobre Nossos Serviços</h2>
+        <button onclick="document.getElementById('inforServico').style.display='block'">
+             Clique para saber mais
+        </button>
+        <div id="inforServico">
+            <p>Oferecemos Serviços Profissionais de Fotografia</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Nossas Rede Sociais</h2>
+        <div class="icones">
+            <i>Facebook</i>
+            <i>Twitter</i>
+            <i>Instagram</i>
+        </div>
+    </section>
+
+    <footer>
+        <h2>Contato</h2>
+        <p onclick="document.getElementById('MensagemContato').style.display='block'">
+            Clique aqui para entrar em Contato
+        </p>
+        <div id="MensagemContato">
+            <p>Telefone (11) 123-4564</p>
+            <p>Email: metaphor@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>
